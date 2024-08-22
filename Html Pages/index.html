@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            City Sample
+        </title>
+    </head>
+    <body>
+        <h1>City Sample</h1>
+        <button onclick="getAllCities();">Get All</button>
+
+        <script>
+
+            'use strict';
+            
+            const url = "http://localhost:5000/api";
+
+            function getAllCities() {
+                console.log("GET ALL");
+                let req =  new XMLHttpRequest();
+                req.onreadystatechange = function(){
+                    if(this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                        let response = JSON.parse(this.response);
+                        console.log(response.status);
+                        console.log(response.statusText);
+                        console.log(response.data);
+                    }
+                
+                
+            };
+            req.open("GET", url);
+            req.send();
+        }
+            
+    
+        </script>
+    </body>
+
+
+</html>
