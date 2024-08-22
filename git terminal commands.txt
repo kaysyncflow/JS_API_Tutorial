@@ -42,3 +42,5 @@ git reset <commit id> resets to commit with id provided to exit type:qa! then en
 git branch <nameofbranch> create new branch with name given 
 
 git switch <nameofbrach> switches to branch name given 
+
+git merge - m "message" <brach to mearge into> this is the command for merging different branches 
