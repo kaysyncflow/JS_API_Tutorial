@@ -1,0 +1,44 @@
+git config --global user.name "Akolade Mustapha"
+
+git config --global user.email "f.aamustapha@gmail.com"
+
+git config --global init.default branch main
+
+cd documents/JS_API_INTROCOURSE cd directory
+
+git init
+
+git add --all
+git add .
+git add -A
+
+git diff is for viewing changs made to files 
+
+git restore --staged <filename> 
+removes files from commit to staging so they will not be commited
+
+git commit -a-m skips over staging and commit all files 
+
+git rm <nameoffile> deletes file from repo
+
+git restor <filename in quote> this restores deleted file
+
+git mv <oldfilenameinquote> <newfilenameinquote> this renames the files
+
+git log gives you all commit history 
+
+git log --oneline gives short version of commit historyS
+
+git commit - m "comment here" --amend: this amends the previous commit 
+
+git log -p gives detailed changes of commit history 
+
+git help log opens manual for git log  
+
+git help <git command> open up manual for git command
+
+git reset <commit id> resets to commit with id provided to exit type:qa! then enter 
+
+git branch <nameofbranch> create new branch with name given 
+
+git switch <nameofbrach> switches to branch name given 
